@@ -29,7 +29,7 @@ func (m *MainScene) OnEnter(g *game.Game) {
 func (m *MainScene) Update(dt float32) {
 	if dt > .5 { return } // window freeze!! skip
 	m.p.Update(dt)
-	gui.Image(1, m.img, nil)
+	gui.Image(1, gui.Rect{0 ,0, 0, 0}, m.img, nil)
 }
 
 func (*MainScene) OnExit() {
